@@ -2,7 +2,7 @@
 
 ## Dataset for demonstration
 
-id.csb identifies the clone id of the cells, allowing comparison between the original dataset and the predicted dataset
+id.csv identifies the clone id of the cells, allowing comparison between the original dataset and the predicted dataset
 
 AD.mtx and DP.mtx are smaller dataset that demonstrates how the Betabin package works
 

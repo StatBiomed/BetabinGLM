@@ -76,4 +76,9 @@ class betabin:
         self.method = method
         self.params = fit(self)
         self.predict = predict(self.params, self.exog, self.endog)
-        self.LL = LL(self.params, self.exog, self.endog)
+        LL_try = LL(self.params, self.exog, self.endog)
+        if LL_try > 0:
+            self.LL = np.nan
+            print("Positive LL is obtained by error in optimization. Change another optimizer to avoid this problem") 
+        else:
+            self.LL = LL_try

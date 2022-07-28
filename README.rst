@@ -27,7 +27,7 @@ Quick start
 
 Where both x and y can be an array of more than 1 dimension
 
-To obtain the Log-likelihood:
+To obtain the Log-Likelihood:
 
 .. code-block:: python
 

@@ -28,9 +28,9 @@ Quick start
 Both x and y can be an array of more than 1 dimension
 
 To obtain the negative Log-likelihood:
+.. code-block:: python
 
   model.LL
-
 
 
 Related links

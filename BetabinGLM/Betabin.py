@@ -79,6 +79,6 @@ class betabin:
         LL_try = LL(self.params, self.exog, self.endog)
         if LL_try > 0:
             self.LL = np.nan
-            print("Positive LL is obtained by error in optimization. Change another optimizer to avoid this problem") 
+            print("Positive LL is obtained by error in optimization. Change another optimizer to avoid this problem.") 
         else:
             self.LL = LL_try

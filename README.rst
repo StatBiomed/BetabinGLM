@@ -21,9 +21,16 @@ Quick start
 
 .. code-block:: python
 
-  import BetabinGLM
+  from BetabinGLM import betabin
 
-More detailed documentation is coming soon...
+  model = betabin(x, y)
+
+Both x and y can be an array of more than 1 dimension
+
+To obtain the negative Log-likelihood:
+
+  model.LL
+
 
 
 Related links

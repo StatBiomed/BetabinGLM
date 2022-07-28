@@ -6,7 +6,7 @@ Installation
 ============
 
 You can install from this GitHub repository for the latest (often development) 
-version by following the command line
+version by following the command line.
 
 .. code-block:: bash
 
@@ -25,7 +25,7 @@ Quick start
 
   model = betabin(x, y)
 
-Where both x and y can be an array of more than 1 dimension
+Where x is an array of n * w dimensions, y is an array of n * 2 dimensions. n is the sample size. w is the number of independent variables. The columns 1 and 2 of y represent the number of positive and negative respectively.
 
 To obtain the Log-Likelihood:
 

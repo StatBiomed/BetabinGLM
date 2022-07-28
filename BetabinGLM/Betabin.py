@@ -1,5 +1,6 @@
 import numpy as np
 import scipy as sp
+import statsmodels.api as sm
 
 ## Sigmoid function
 def sigmoid(x):

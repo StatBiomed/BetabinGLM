@@ -23,9 +23,11 @@ Quick start
 
   from BetabinGLM import betabin
 
-  model = betabin(x, y)
+  model = betabin(x, y, fit_intercept = True, method = "SLSQP")
 
 Where x is an array of n * w dimensions, y is an array of n * 2 dimensions. n is the sample size, w is the number of independent variables. The columns 1 and 2 of y represent the numbers of positive and negative observation respectively.
+
+Constants for intercept are added by default. For optimization, this package supports all methods in sp.optimize.minimize and SLSQP is used by default.
 
 To obtain the Log-Likelihood:
 

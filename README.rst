@@ -31,6 +31,7 @@ Constants for intercept are added by default.
 
 For optimization, this package supports all methods in sp.optimize.minimize. SLSQP is used by default.
 
+
 To obtain the Log-Likelihood:
 
 .. code-block:: python

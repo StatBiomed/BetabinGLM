@@ -25,7 +25,7 @@ Quick start
 
   model = betabin(x, y)
 
-Both x and y can be an array of more than 1 dimension
+Where both x and y can be an array of more than 1 dimension
 
 To obtain the negative Log-likelihood:
 

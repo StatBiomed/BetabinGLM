@@ -77,6 +77,7 @@ def get_LL(self, W, phi):
 def fit(self):
     phi = 0.1
     W = np.array([0 for i in range (self.exog.shape[1])])
+    #print(np.shape(W))
     NLL_trend = []
     while True:
         if (len(NLL_trend) > 1):
@@ -93,9 +94,9 @@ class BetaBinomial():
         self.exog = exog
         self.endog = endog
         self.method = method
-        self.phi, self.W = fit(self)
+        self.W, self.phi = fit(self)
         self.predict = predict(self)
-        self.NLL = -get_loglikelihood(self)
-        if self.NLL > 0:
-            self.NLL = np.nan
+        self.LL = get_loglikelihood(self)
+        if self.LL > 0:
+            self.LL = np.nan
             print("Positive LL is obtained by error in optimization. Change another optimizer to avoid this problem.") 

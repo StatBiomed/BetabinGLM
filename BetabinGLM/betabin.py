@@ -3,7 +3,6 @@ import numpy as np
 import statsmodels.api as sm
 from scipy.optimize import minimize
 from scipy.special import betaln, gammaln
-from scipy.stats import binom
 
 
 # sigmoid function
@@ -87,7 +86,7 @@ def fit(self):
         NLL_trend.append(-get_LL(self, W, phi))
     return W, phi
 
-class BetaBinomial():
+class betabin():
     def __init__(self, endog, exog, fit_intercept = True, method = 'Nelder-Mead'):
         if fit_intercept:
             exog = sm.add_constant(exog, prepend = False)

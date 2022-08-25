@@ -86,7 +86,7 @@ def fit(self):
         NLL_trend.append(-get_LL(self, W, phi))
     return W, phi
 
-class betabin():
+class BetaBinomial():
     def __init__(self, endog, exog, fit_intercept = True, method = 'Nelder-Mead'):
         if fit_intercept:
             exog = sm.add_constant(exog, prepend = False)

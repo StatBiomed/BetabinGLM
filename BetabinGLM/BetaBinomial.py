@@ -40,7 +40,7 @@ def predict(self):
     W = self.W
     print(W)
     print(np.shape(W))
-    Z = sigmoid(np.inner(W, exog))
+    Z = sigmoid(np.inner(W, self.exog))
     n = np.array(self.endog[:, 0] + self.endog[:, 1])
     pred = [(Z[i] * n[i], (1 - Z[i]) * n[i]) for i in range (len(Z))]
     ypred = np.array(pred)

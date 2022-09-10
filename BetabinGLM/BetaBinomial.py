@@ -64,7 +64,6 @@ def fit_trial(self, phi, W):
     W = res1.x
     bounds_phi = [(0, 1)]
     res2 = minimize(fun = cost_fun_for_phi, x0 = phi, args = (self.endog, self.exog, W), bounds = bounds_phi, method = self.method) 
-    print(W)
     return res1.x, res2.x
 
 #  calculate the log likelihood during optimization

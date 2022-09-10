@@ -38,6 +38,8 @@ def cost_fun_for_phi(phi, endog, exog, W):
 # predict the output given the parameters
 def predict(self):
     W = self.W
+    print(W)
+    print(np.shape(W))
     Z = sigmoid(np.dot(self.exog, W))
     n = np.array(self.endog[:, 0] + self.endog[:, 1])
     pred = [(Z[i] * n[i], (1 - Z[i]) * n[i]) for i in range (len(Z))]

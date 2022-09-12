@@ -35,7 +35,7 @@ To obtain the Log-Likelihood:
 
   model.LL
   
-Try testing a few samples, if it doesn't provide a satisfying result: 1) errors occured (e.g. the initialization using binomial regression encounters a nan value problem) 2) Provides unaccurate result (e.g. returns a groups of 0 in parameters or comparing the log-likelihood with the one gotten from the way below), then consider the ways listed below would be practicle. Otherwise, keep using this one as it works faster. 
+Try testing a few samples, if it doesn't provide a satisfying result: 1) errors occured (e.g. the initialization using binomial regression encounters a nan value problem) 2) Provides unaccurate result (e.g. returns a groups of 0 in parameters or provides a very small log-likelihood compared with the one gotten from the method below), then consider the ways listed below would be practicable. Otherwise, keep using this one as it works faster. 
 
 .. code-block:: python
 

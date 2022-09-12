@@ -85,7 +85,7 @@ def fit(self):
                 break
         W, phi = fit_trial(self, phi, W)
         NLL_trend.append(-get_LL(self, W, phi))
-    return W, phi
+    return W, phi[0]
 
 class BetaBinomial():
     def __init__(self, endog, exog, fit_intercept = True, method = 'Nelder-Mead'):

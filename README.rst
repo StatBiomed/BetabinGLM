@@ -35,7 +35,9 @@ To obtain the Log-Likelihood:
 
   model.LL
   
+  
 Try testing a few samples, if it doesn't provide a satisfying result: 1) errors occured (e.g. the initialization using binomial regression encounters a nan value problem) 2) Provides unaccurate result (e.g. returns a groups of 0 in parameters or provides a very small log-likelihood compared with the one gotten from the method below), then consider the ways listed below would be practicable. Otherwise, keep using this one as it works faster. 
+
 
 .. code-block:: python
 
@@ -44,6 +46,7 @@ Try testing a few samples, if it doesn't provide a satisfying result: 1) errors 
   model = BetaBinomial(x, y, fit_intercept = True, method = "Nelder-Mead")
   
 This package is similar to the 'betabin' mentioned above expect using a different way to initialize and calling scipy.optimize.minimize several times during optimization. Also, Nelder-Mead is used by default, instead of SLSQP. Try this one if the last can't offer a sactisfying result. 
+
 
 .. code-block:: python
 

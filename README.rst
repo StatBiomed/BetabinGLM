@@ -45,7 +45,7 @@ Try testing a few samples, if it doesn't provide a satisfying result: 1) errors 
   
   model = BetaBinomial(x, y, fit_intercept = True, method = "Nelder-Mead")
   
-This package is similar to the 'betabin' mentioned above expect using a different way to initialize and calling scipy.optimize.minimize several times during optimization. Also, Nelder-Mead is used by default, instead of SLSQP. Try this one if the 'betabin' can't offer a sactisfying result. 
+This package is similar to the ``betabin`` mentioned above expect using a different way to initialize and calling scipy.optimize.minimize several times during optimization. Also, Nelder-Mead is used by default, instead of SLSQP. Try this one if the 'betabin' can't offer a sactisfying result. 
 
 
 .. code-block:: python
@@ -54,7 +54,7 @@ This package is similar to the 'betabin' mentioned above expect using a differen
   
   model = BetaBinomialAlternative(x, y, fit_intercept = True, method = "Nelder-Mead")
   
-This package is very similar to the 'BetaBinomial' mentioned above. Try this one if the data contains various variables (e.g. the number of variables > 15) since this one works faster while the accuracy are similar to the 'BetaBinomial'. 
+This package is very similar to the ``BetaBinomial`` mentioned above. Try this one if the data contains various variables (e.g. the number of variables > 15) since this one works faster while the accuracy are similar to the 'BetaBinomial'. 
 
 Related links
 =============
